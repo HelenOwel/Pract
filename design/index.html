@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="https://kit.fontawesome.com/92af3a2a49.js" crossorigin="anonymous"></script>
+
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body >
+ <div class=" h-full bg-white px-4 mx-9 py-4 justify-center items-center mt-10 relative">
+  <div class="container hidden md:flex md:justify-between  max-w-[900px] md:px-16 mx-auto items-center">
+    <img src="../assets/images/logo.svg" alt="">
+    <div>
+        <ul class="flex gap-6">
+            <li class="text-medium">Home</li>
+            <li class="text-medium">New</li>
+            <li class="text-medium">Popular</li>
+            <li class="text-medium">Trending</li>
+            <li class="text-medium">Company</li>
+        </ul>
+    </div>
+    </div>
+
+
+
+   <div>
+    <div class="container block justify-between  md:hidden max-w-[900px] md:px-16 mx-auto items-center " >
+      <div class="flex justify-between">
+        <img src="../assets/images/logo.svg" alt="">
+      <i class="fa-solid fa-bars text-3xl" onclick="showMenu()"></i>
+      </div>
+      <div class="bg-white absolute left-0 top-0 duration-200 w-96 h-screen " id="mains" style="left:-500px">
+      <div class="justify-between flex pt-4" >
+       <img src="../assets/images/logo.svg" alt="">
+       <i class="fa-solid fa-xmark text-4xl" onclick="hideMenu()"></i>
+      </div>
+       <div>
+           <ul class="block pt-6 pl-4 cursor-pointer">
+               <li class="text-medium  py-4 text-lg">Home</li>
+               <li class="text-medium py-4 text-lg">New</li>
+               <li class="text-medium py-4 text-lg">Popular</li>
+               <li class="text-medium py-4 text-lg">Trending</li>
+               <li class="text-medium py-4 text-lg">Company</li>
+           </ul>
+       </div>
+      </div>
+       </div>
+ 
+   </div>
+
+
+
+  <div class=" pt-8 grid lg:grid-cols-3 justify-between gap-5 mx-auto items-center md:px-16">
+  <div class=" col-span-2 h-full">
+    <img src="../assets/images/image-web-3-mobile.jpg" alt="" class=" w-full h-60">
+    <div class="flex sm:flex-row justify-between gap-3">
+     <div class="w-full  h-40 pt-4" >
+      <h1 class="uppercase text-4xl font-bold px-5">THE BRIGHT FUture of WEB 3.0</h1>
+     </div>
+      <div class="w-full pt-4">
+        <p class="text-gray-700">We dive into the next evolution of the web that claims to put the power of thr platform back into the hands of people. But it's really fulfilling it's promise</p>
+        <button class="bg-red-500 px-8 py-4 text-lg text-white mt-3 cursor-pointer">Read More</button>
+      </div>
+    </div>
+  </div>
+  <div class="h-full bg-black  text-white pl-5 px-9">
+    <div>
+      <h1 class="text-yellow-200 text text-3xl pt-2">New</h1>
+    <h4 class="font-bold pb-2 pt-1 text-lg">Hydrogen vs Electric Cars</h4>
+    <p class="pb-4  pt-2 border-b border-gray-600">will hydrogen fueled cars ever catch up with Evas</p>
+
+    </div>
+    <div>
+    <h4 class="font-bold pb-3  text-lg pt-3">The Downsides Of Ai Artistry</h4>
+    <p class="pb-4 border-b border-gray-600">will hydrogen fueled cars ever catch up with Evas</p>
+    </div>
+    <div>
+    <h4 class="font-bold pb-3 text-lg  pt-3">Is Vc Funding Drying Up</h4>
+    <p class="">Private funding by Vc firm is down 50% YOY. We take a look at what that means</p>
+    </div>
+  </div>
+  </div>
+  <div class="grid md:grid-cols-3 justify-between items-center pt-10 gap-9 h-full max-[50px]:">
+    <div class="flex gap-5 h-30">
+      <img src="../assets/images/image-retro-pcs.jpg" alt="" style="height:150px">
+      <div>
+        <h1 class="text-red-500 text-3xl">01</h1>
+        <p class="text-lg font-bold pt-2">Reviving Retro PCS</p>
+        <p class="text-gray-500 text-sm pt-1">What happens when old pcs are given modern upgrades</p>
+      </div>
+    </div>
+    <div class="flex gap-5">
+      <img src="../assets/images/image-top-laptops.jpg" alt="" style="height:150px">
+      <div>
+        <h1 class="text-red-500 text-3xl">02</h1>
+        <p class="text-lg font-bold pt-2">Reviving Retro PCS</p>
+        <p class="text-gray-500 text-sm">What happens when old pcs are given modern upgrades</p>
+      </div>
+    </div>
+    <div class="flex gap-5">
+      <img src="../assets/images/image-gaming-growth.jpg" alt="" style="height:150px">
+      <div>
+        <h1 class="text-red-500 text-3xl">03</h1>
+        <p class="text-lg font-bold pt-2">Reviving Retro PCS</p>
+        <p class="text-gray-500 text-sm">What happens when old pcs are given modern upgrades</p>
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+
+ <script>
+  let mains = document.getElementById("mains")
+  function showMenu (){
+    mains.style.left = "0px"
+  }
+  function hideMenu(){
+    mains.style.left = "-500px"
+  }
+
+ </script>
+</body>
+</html>
